@@ -26,6 +26,7 @@ function reducer(state, action) {
     case 'M+':
       return { ...state, memory: state.total };
     case 'MR':
+      applyNumber(state.memory)
       return { ...state, total: state.memory }
     case 'MC':
       return { ...state, memory: 0 };
