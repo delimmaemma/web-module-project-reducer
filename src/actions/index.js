@@ -1,16 +1,10 @@
 import { value } from '../components/App'
 
-export const ADD_ONE = "ADD_ONE";
-
 export const APPLY_NUMBER = "APPLY_NUMBER";
 export const CHANGE_OPERATION = "CHANGE_OPERATION";
 
 export let num1 = 0
 export let num2 = 0
-
-export const addOne = () => {
-    return({type:ADD_ONE});
-}
 
 export const applyNumber = (number) => {
     value.push(number)
@@ -21,8 +15,7 @@ export const changeOperation = (operation) => {
     if(!num1) {
         num1 = value.join('')
         value.splice(0, value.length)
-        // if( value.length > 0 ) return({type: CHANGE_OPERATION, payload: operation, value: value})
-        // else return ({type: CHANGE_OPERATION, payload: operation, value: 0})
+
     }
     if(num1) {
         num2 = value.join('')

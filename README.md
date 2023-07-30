@@ -63,30 +63,30 @@ export const initialState = {
 
 #### Connect a better premade action.
 > *Adding indivisual actions for every number would be tedious. Let's add in an action that can work for ALL numerical input*
-* [ ] Note the `APPLY_NUMBER` action case (in ./reducer/index.js) and `applyNumber` action creator (in ./actions/index.js). This action adds, multiplies or subtracts a number passed into the action creator.
-* [ ] Import the `applyNumber` action creator into `App.js.`
-* [ ] Remove or comment out the `addOne` event handler from the 1 button.
-* [ ] Create an eventhandler that takes in a number as an argument and dispatches `applyNumber` with it.
-* [ ] Attach that eventhandler to the 1 button's `onClick` method, passing in a 1 as an argument. (Remember that we pass a function into that click handler, not the execution of a function)
-* [ ] **Test** that clicking the one button still adds one to the total display on the browser.
-* [ ] Connect all other number buttons to your new event handler, passing in their respective values.
-* [ ] **Test** that clicking on each button will add its respective value to the total display.
+* [X] Note the `APPLY_NUMBER` action case (in ./reducer/index.js) and `applyNumber` action creator (in ./actions/index.js). This action adds, multiplies or subtracts a number passed into the action creator.
+* [X] Import the `applyNumber` action creator into `App.js.`
+* [X] Remove or comment out the `addOne` event handler from the 1 button.
+* [X] Create an eventhandler that takes in a number as an argument and dispatches `applyNumber` with it.
+* [X] Attach that eventhandler to the 1 button's `onClick` method, passing in a 1 as an argument. (Remember that we pass a function into that click handler, not the execution of a function)
+* [X] **Test** that clicking the one button still adds one to the total display on the browser.
+* [X] Connect all other number buttons to your new event handler, passing in their respective values.
+* [X] **Test** that clicking on each button will add its respective value to the total display.
 
 #### Create and connect an action creator.
 > *Right now our application only adds. Let's change that and give you practice creating and connecting action creators of your own!*
-* [ ] Note the `CHANGE_OPERATION` action case (in `./reducer/index.js`). This reducer case takes in a operator value (+, * or -) and assigns it to state.
-* [ ] Create an action creator (in `./actions/index.js`) that takes in an operator as an argument and creates an action object with the type `CHANGE_OPERATION.`
-* [ ] Import in your new action creator into `App.js.`
-* [ ] Create and attach event handlers to the `+`, `-` and `*` buttons that dispatch your new action creator. Make sure you pass in the appropriate operator string in each case.
-* [ ] **Test** that you can successfully change operators and apply numbers in each case.
+* [X] Note the `CHANGE_OPERATION` action case (in `./reducer/index.js`). This reducer case takes in a operator value (+, * or -) and assigns it to state.
+* [X] Create an action creator (in `./actions/index.js`) that takes in an operator as an argument and creates an action object with the type `CHANGE_OPERATION.`
+* [X] Import in your new action creator into `App.js.`
+* [X] Create and attach event handlers to the `+`, `-` and `*` buttons that dispatch your new action creator. Make sure you pass in the appropriate operator string in each case.
+* [X] **Test** that you can successfully change operators and apply numbers in each case.
 
 #### Create and connect a reducer case and action creator.
 > *Now let's add in the clear display feature. For this, you will be doing every part of the reducer / action creator process.*
-* [ ] Within `./reducers/index,` add in a case for `CLEAR_DISPLAY`. Clear display should set the total value in state to 0.
-* [ ] Within `./actions/index,` add in an action creator and action string constant to for `CLEAR_DISPLAY`. Make sure to import that constant into your reducer file.
-* [ ] Within `App.js,` import in your clearDisplay action creator.
-* [ ] Create and connect an event handler to the "CE" button that dispatches your clearDisplay action creator.
-* [ ] **Test** that your clearDisplay button works as expected.
+* [X] Within `./reducers/index,` add in a case for `CLEAR_DISPLAY`. Clear display should set the total value in state to 0.
+* [X] Within `./actions/index,` add in an action creator and action string constant to for `CLEAR_DISPLAY`. Make sure to import that constant into your reducer file.
+* [X] Within `App.js,` import in your clearDisplay action creator.
+* [X] Create and connect an event handler to the "CE" button that dispatches your clearDisplay action creator.
+* [X] **Test** that your clearDisplay button works as expected.
 
 #### Add in memory functions from scratch.
 > *Congratulations! You have gone through the entire process for adding an action to your app! Now, see if you can follow the same process (reducer case => action creator => UI connection) for the following app features. IN EACH CASE, ALWAYS TEST THAT YOUR FEATURE WORKS BEFORE PROCEEDING FORWARD.*
@@ -97,7 +97,7 @@ export const initialState = {
 
 
 ### Task 3: Stretch goals
-- [ ] There is a version of the calculator focuses on adding individual digits, rather then entire numbers. How do you imagine adding an individual digit to the total state?
+- [X] There is a version of the calculator focuses on adding individual digits, rather then entire numbers. How do you imagine adding an individual digit to the total state?
 - [ ] [Here is an example](https://freshman.tech/calculator/) of a (non-reducer) approach to building an javascript calculator. Feel free to make a new branch and use the basic ideas in the post to build a new version of the calculator.
 
 
